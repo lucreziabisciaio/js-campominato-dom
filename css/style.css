@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.button-container {
+    text-align: center;
+}
+
+#campominato-container {
+    margin: 0 auto;
+    margin-top: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* --------------------------------------------- */
+
+/* CONTAINER LIVELLI */
+#campominato-container.livello-1 {
+    width: 500px;
+}
+
+#campominato-container.livello-2 {
+    width: 450px;
+}
+
+#campominato-container.livello-3 {
+    width: 350px;
+}
+
+.button-container > button {
+    margin: 0 5px;
+}
+
+/* CELL */
+.cell {
+    width: 50px;
+    height: 50px;
+    border: 1px #333 solid;
+}
+
+.cell.red {
+    background-color: red;
+}
+
+.cell.blue {
+    background-color: blue;
+}
+
+/* GAME OVER */
+.game-over {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    line-height: 100vh;
+    text-align: center;
+    color: #fff;
+}
+
+.game-over.loser {
+    background-color: rgba(255, 0, 0, .5);
+}
+
+.game-over.winner {
+    background-color: rgba(0, 200, 0, .5);
+}
